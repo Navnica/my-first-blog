@@ -15,7 +15,7 @@ class Post(models.Model):
         self.save()
 
     def __str__(self):
-        return self.title
+        return f'id={self.id}, title={self.title}'
 
 
 class Comment(models.Model):
